@@ -105,8 +105,8 @@ Then('the user should be able to see the Your Information page', async function 
 });
 
 When('the user enters their First Name, Last Name, and Zipcode', async function () {
-  await this.page.fill(pageObjects.firstNameInput, 'John');
-  await this.page.fill(pageObjects.lastNameInput, 'Doe');
+  await this.page.fill(pageObjects.firstNameInput, 'Test');
+  await this.page.fill(pageObjects.lastNameInput, 'Test');
   await this.page.fill(pageObjects.zipCodeInput, '12345');
 });
 
