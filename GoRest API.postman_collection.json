@@ -4,18 +4,53 @@
 		"name": "GoRest API",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "20291754",
-		"_collection_link": "https://www.postman.com/planetary-trinity-505204/gorest/collection/b1b8zf2/new-collection?action=share&source=collection_link&creator=20291754"
+		"_collection_link": "https://www.postman.com/planetary-trinity-505204/gorest/collection/b1b8zf2/gorest-api?action=share&source=collection_link&creator=20291754"
 	},
 	"item": [
 		{
 			"name": "CreateAccount",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Assert status code",
+							"pm.test(\"Status code is 201\", function () {",
+							"    pm.response.to.have.status(201);",
+							"});",
+							"//Assertion response time",
+							"pm.test(\"Verify the response time is less than 3 seconds\", function () {",
+							"    const threeSecondsMs = 3_000; // 3 seconds in milliseconds\",",
+							"pm.expect(pm.response.responseTime).to.be.below(threeSecondsMs);",
+							"});",
+							"//Assert properties",
+							"const jsonData = pm.response.json();",
+							"pm.test('Verify all of the Properties are available', function (){",
+							"    pm.expect(jsonData).to.have.property('id');",
+							"    pm.expect(jsonData).to.have.property('name');",
+							"    pm.expect(jsonData).to.have.property('email');",
+							"    pm.expect(jsonData).to.have.property('gender');",
+							"    pm.expect(jsonData).to.have.property('status');",
+							"});",
+							"//Assert property value",
+							"pm.test(\"Status value is correct\", function () {",
+							"   const json = pm.response.json();",
+							"    pm.expect(json).to.have.property(\"status\", \"active\");",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
 			"request": {
 				"auth": {
 					"type": "bearer",
 					"bearer": [
 						{
 							"key": "token",
-							"value": "{{vault:authorization-secret}}",
+							"value": "62630eaff32ded7df8132a440c23dd8b451ebcfa21f5db214fdf6a525fb08c78",
 							"type": "string"
 						}
 					]
@@ -24,7 +59,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\":\"Tenali Ramakrishna\", \n    \"gender\":\"male\", \n    \"email\":\"tenali.ramakrishna@15ce.com\", \n    \"status\":\"active\"\n} ",
+					"raw": "{\n    \"name\":\"leley\", \n    \"gender\":\"male\", \n    \"email\":\"leley5@yoyo.com\", \n    \"status\":\"active\"\n} ",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -50,13 +85,49 @@
 		},
 		{
 			"name": "GetData",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Assertion status code",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"//Assertion response time",
+							"pm.test(\"Verify the response time is less than 3 seconds\", function () {",
+							"    const threeSecondsMs = 3_000; // 3 seconds in milliseconds\",",
+							"pm.expect(pm.response.responseTime).to.be.below(threeSecondsMs);",
+							"});",
+							"//Assert properties\",",
+							"const jsonData = pm.response.json();",
+							"pm.test('Verify all of the Properties are available', function (){",
+							"    pm.expect(jsonData).to.have.property('id');",
+							"    pm.expect(jsonData).to.have.property('name');",
+							"    pm.expect(jsonData).to.have.property('email');",
+							"    pm.expect(jsonData).to.have.property('gender');",
+							"    pm.expect(jsonData).to.have.property('email');",
+							"    pm.expect(jsonData).to.have.property('status');",
+							"});",
+							"//Assertion property value",
+							"pm.test(\"Status value is correct\", function () {",
+							"   const json = pm.response.json();",
+							"    pm.expect(json).to.have.property(\"status\", \"active\");",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
 			"request": {
 				"auth": {
 					"type": "bearer",
 					"bearer": [
 						{
 							"key": "token",
-							"value": "{{vault:authorization-secret}}",
+							"value": "62630eaff32ded7df8132a440c23dd8b451ebcfa21f5db214fdf6a525fb08c78",
 							"type": "string"
 						}
 					]
@@ -64,7 +135,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://gorest.co.in/public/v2/users/8223823",
+					"raw": "https://gorest.co.in/public/v2/users/8224226",
 					"protocol": "https",
 					"host": [
 						"gorest",
@@ -75,7 +146,7 @@
 						"public",
 						"v2",
 						"users",
-						"8223823"
+						"8224226"
 					]
 				}
 			},
@@ -83,13 +154,49 @@
 		},
 		{
 			"name": "UpdateData",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"//Assertion status code",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"//Assertion response time",
+							"pm.test(\"Verify the response time is less than 3 seconds\", function () {",
+							"    const threeSecondsMs = 3_000; // 3 seconds in milliseconds\",",
+							"pm.expect(pm.response.responseTime).to.be.below(threeSecondsMs);",
+							"});",
+							"//Assert properties\",",
+							"const jsonData = pm.response.json();",
+							"pm.test('Verify all of the Properties are available', function (){",
+							"    pm.expect(jsonData).to.have.property('id');",
+							"    pm.expect(jsonData).to.have.property('name');",
+							"    pm.expect(jsonData).to.have.property('email');",
+							"    pm.expect(jsonData).to.have.property('gender');",
+							"    pm.expect(jsonData).to.have.property('email');",
+							"    pm.expect(jsonData).to.have.property('status');",
+							"});",
+							"//Assertion property value",
+							"pm.test(\"Status value is correct\", function () {",
+							"   const json = pm.response.json();",
+							"    pm.expect(json).to.have.property(\"status\", \"inactive\");",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {},
+						"requests": {}
+					}
+				}
+			],
 			"request": {
 				"auth": {
 					"type": "bearer",
 					"bearer": [
 						{
 							"key": "token",
-							"value": "{{vault:authorization-secret}}",
+							"value": "62630eaff32ded7df8132a440c23dd8b451ebcfa21f5db214fdf6a525fb08c78",
 							"type": "string"
 						}
 					]
@@ -98,7 +205,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\":\"Lele Jumbo\", \n    \"gender\":\"male\", \n    \"email\":\"lele@yoyo.com\", \n    \"status\":\"active\"\n} ",
+					"raw": "{\n    \"name\":\"leley\", \n    \"gender\":\"male\", \n    \"email\":\"leley4@yoyo.com\", \n    \"status\":\"inactive\"\n} ",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -106,7 +213,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://gorest.co.in/public/v2/users/8223823",
+					"raw": "https://gorest.co.in/public/v2/users/8224226",
 					"protocol": "https",
 					"host": [
 						"gorest",
@@ -117,7 +224,7 @@
 						"public",
 						"v2",
 						"users",
-						"8223823"
+						"8224226"
 					]
 				}
 			},
