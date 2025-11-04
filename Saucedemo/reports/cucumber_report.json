@@ -1,0 +1,548 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "saucedemo-login-and-sorting;user-logs-in-and-sorts-products",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "User logs in and sorts products",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 571666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "the user accesses \"https://www.saucedemo.com/\"",
+            "match": {
+              "location": "features/steps/example.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1871029375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "the user sees the login page",
+            "match": {
+              "location": "features/steps/example.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23171208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "enters a valid username",
+            "match": {
+              "location": "features/steps/example.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 213391042
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "enters a valid password",
+            "match": {
+              "location": "features/steps/example.steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 262673208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "clicks on the login button",
+            "match": {
+              "location": "features/steps/example.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 306527916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the user should be able to see the inventory page",
+            "match": {
+              "location": "features/steps/example.steps.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7457332
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "user should be able to click on sort dropdown",
+            "match": {
+              "location": "features/steps/example.steps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 239312249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user should be able to select sort name A-Z",
+            "match": {
+              "location": "features/steps/example.steps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 224175500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "user should be able to see the alphabetical order",
+            "match": {
+              "location": "features/steps/example.steps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6179583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "user should be able to click on sort dropdown",
+            "match": {
+              "location": "features/steps/example.steps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 245240791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "user should be able to select sort name Z-A",
+            "match": {
+              "location": "features/steps/example.steps.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 223604875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "user should be able to see the revers alphabetical order",
+            "match": {
+              "location": "features/steps/example.steps.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4591499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "user should be able to click on sort dropdown",
+            "match": {
+              "location": "features/steps/example.steps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 244121958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "user should be able to select sort price low-high",
+            "match": {
+              "location": "features/steps/example.steps.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 219236334
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "user should be able to see the lower price first",
+            "match": {
+              "location": "features/steps/example.steps.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4634334
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "user should be able to click on sort dropdown",
+            "match": {
+              "location": "features/steps/example.steps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 240396916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "user should be able to select sort price high-low",
+            "match": {
+              "location": "features/steps/example.steps.js:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 218537374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "user should be able to see the higher price first",
+            "match": {
+              "location": "features/steps/example.steps.js:71"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4478207
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 155890374
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "saucedemo-login-and-sorting;verify-user-should-be-able-to-checkout-an-item",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Verify user should be able to checkout an item",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 35292
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "the user accesses \"https://www.saucedemo.com/\"",
+            "match": {
+              "location": "features/steps/example.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 996663583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "the user sees the login page",
+            "match": {
+              "location": "features/steps/example.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 15963541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "enters a valid username",
+            "match": {
+              "location": "features/steps/example.steps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 206228959
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "enters a valid password",
+            "match": {
+              "location": "features/steps/example.steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 261530999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "clicks on the login button",
+            "match": {
+              "location": "features/steps/example.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 278121999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "the user should be able to see the inventory page",
+            "match": {
+              "location": "features/steps/example.steps.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5789292
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "should be able to view an item on the inventory page",
+            "match": {
+              "location": "features/steps/example.steps.js:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4677083
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "should see the Add to Cart button within the section",
+            "match": {
+              "location": "features/steps/example.steps.js:81"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3916957
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "the user clicks on the Add to Cart button",
+            "match": {
+              "location": "features/steps/example.steps.js:85"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 219594625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "the item should be successfully added to the cart",
+            "match": {
+              "location": "features/steps/example.steps.js:89"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5181499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 34,
+            "name": "the user clicks on the Cart icon",
+            "match": {
+              "location": "features/steps/example.steps.js:93"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 278400083
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "the user should be able to see the cart page",
+            "match": {
+              "location": "features/steps/example.steps.js:97"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3820583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "the user clicks on the Checkout button",
+            "match": {
+              "location": "features/steps/example.steps.js:101"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 266931375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "the user should be able to see the Your Information page",
+            "match": {
+              "location": "features/steps/example.steps.js:105"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5296666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "the user enters their First Name, Last Name, and Zipcode",
+            "match": {
+              "location": "features/steps/example.steps.js:109"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 638194874
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "clicks on the Continue button",
+            "match": {
+              "location": "features/steps/example.steps.js:115"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 270640375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 40,
+            "name": "the user should be able to see the Overview page",
+            "match": {
+              "location": "features/steps/example.steps.js:119"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6570208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 41,
+            "name": "the user clicks on the Finish button",
+            "match": {
+              "location": "features/steps/example.steps.js:123"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 267817708
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "the user should be able to see the Order Completion page",
+            "match": {
+              "location": "features/steps/example.steps.js:127"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 142583333
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 546249
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "saucedemo-login-and-sorting",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "SauceDemo Login and Sorting",
+    "tags": [],
+    "uri": "features/example.feature"
+  }
+]
